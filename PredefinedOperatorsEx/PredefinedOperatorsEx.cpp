@@ -11,9 +11,10 @@ Double::Double(double*arr, size_t sz):len(sz)
 }
 double* Double::get_a()const { return a; }
 int Double::get_len()const { return len; }
-int Double::set_a(double*arr)
+int Double::set_a(double *arr)
 {
-	size_t l = sizeof(arr) / sizeof(double);
+	int l = sizeof(arr) / sizeof(double);
+	std::cout << "asdasdasdasdaad: "<<sizeof(arr)<<" "<<sizeof(double)<<" "<< l << std::endl;
 	len = l;
 
 	if (a != NULL)
